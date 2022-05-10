@@ -1,0 +1,5 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
+  "recommendations": [
+    "angular.ng-template","johnpapa.angular-essentials","GitHub.copilot","dbaeumer.vscode-eslint", "TabNine.tabnine-vscode"
+  ]}
