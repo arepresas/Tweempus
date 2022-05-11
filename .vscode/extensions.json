@@ -1,11 +1,20 @@
 {
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
   "recommendations": [
-    "angular.ng-template",
-    "johnpapa.angular-essentials",
-    "GitHub.copilot",
+    "mattpocock.ts-error-translator",
+    "manuth.eslint-language-service",
+    "johnpapa.Angular2",
+    "Angular.ng-template",
+    "EditorConfig.EditorConfig",
     "dbaeumer.vscode-eslint",
+    "PKief.material-icon-theme",
+    "eg2.vscode-npm-script",
+    "johnpapa.vscode-peacock",
+    "esbenp.prettier-vscode",
+    "johnpapa.winteriscoming",
+    "ms-azuretools.vscode-docker",
+    "eamodio.gitlens",
     "TabNine.tabnine-vscode",
-    "eamodio.gitlens"
+    "GitHub.copilot"
   ]
 }
