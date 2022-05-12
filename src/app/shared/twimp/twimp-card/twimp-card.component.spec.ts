@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+/* import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TwimpCardComponent } from './twimp-card.component';
 
@@ -8,9 +8,8 @@ describe('TwimpCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TwimpCardComponent ]
-    })
-    .compileComponents();
+      declarations: [TwimpCardComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -23,3 +22,4 @@ describe('TwimpCardComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+ */
