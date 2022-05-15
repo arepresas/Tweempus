@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Author } from '../../author/author.model';
 import { Twimp } from '../twimp.model';
+import { Utils } from '../../utils';
 
 @Component({
   selector: 'tweempus-twimp-list',
@@ -14,18 +16,22 @@ export class TwimpListComponent implements OnInit {
   twimps: Twimp[] = [];
 
   ngOnInit(): void {
-    this.authors.push(new Author(1));
-    this.twimps.push(
-      new Twimp(1, '', this.authors[0], this.text, '01/01/2020')
-    );
-    this.twimps.push(
-      new Twimp(2, '', this.authors[0], this.text, '01/01/2020')
-    );
-    this.twimps.push(
-      new Twimp(3, '', this.authors[0], this.text, '01/01/2020')
-    );
-    this.twimps.push(
-      new Twimp(4, '', this.authors[0], this.text, '01/01/2020')
-    );
+    for (let i = 0; i < 5; i++) {
+      this.twimps.push(
+        new Twimp(
+          i + 1,
+          'http://'.concat(Utils.generateRandomWebsite()),
+          new Author(
+            i + 1,
+            'http://'.concat(Utils.generateRandomWebsite()),
+            Utils.generateRandomName(),
+            'resources/images/google-icon.png'
+          ),
+          this.text,
+          Utils.generateRandomFloatNumber(),
+          Utils.generateRandomDate()
+        )
+      );
+    }
   }
 }

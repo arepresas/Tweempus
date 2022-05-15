@@ -4,11 +4,11 @@ export class Author {
   private _fullName: string;
   private _image: string;
 
-  constructor(id: number) {
+  constructor(id: number, url: string, fullName: string, image: string) {
     this._id = id;
-    this._url = '';
-    this._fullName = 'Author';
-    this._image = 'resources/images/google-icon.png';
+    this._url = url;
+    this._fullName = fullName;
+    this._image = image;
   }
 
   public get id(): number {

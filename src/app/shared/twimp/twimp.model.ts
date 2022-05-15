@@ -5,7 +5,8 @@ export class Twimp {
   private _url: string;
   private _author: Author;
   private _content: string;
-  private _timestamp: string;
+  private _cost: number;
+  private _timestamp: Date;
   private _favorite: boolean;
 
   constructor(
@@ -13,12 +14,14 @@ export class Twimp {
     url: string,
     author: Author,
     content: string,
-    timestamp: string
+    cost: number,
+    timestamp: Date
   ) {
     this._id = id;
     this._url = url;
     this._author = author;
     this._content = content;
+    this._cost = cost;
     this._timestamp = timestamp;
     this._favorite = false;
   }
@@ -51,10 +54,17 @@ export class Twimp {
     this._content = value;
   }
 
-  public get timestamp(): string {
+  public get cost(): number {
+    return this._cost;
+  }
+  public set cost(value: number) {
+    this._cost = value;
+  }
+
+  public get timestamp(): Date {
     return this._timestamp;
   }
-  public set timestamp(value: string) {
+  public set timestamp(value: Date) {
     this._timestamp = value;
   }
 
