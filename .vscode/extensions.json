@@ -14,6 +14,7 @@
     "johnpapa.winteriscoming",
     "ms-azuretools.vscode-docker",
     "eamodio.gitlens",
+    "amatiasq.sort-imports",
     "TabNine.tabnine-vscode",
     "GitHub.copilot"
   ]

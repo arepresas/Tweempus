@@ -9,6 +9,7 @@ export class NavComponent  {
 
   constructor() { }
 
+ name: string = 'Abraham';
 
 
 }
