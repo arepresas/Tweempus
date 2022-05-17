@@ -8,13 +8,11 @@ export class ChangeBackgroundDirective {
 
   @HostListener('mouseover')
   onMouseOver() {
-    console.log('mouseover');
     this.el.nativeElement.style.backgroundColor = '#ffe600';
   }
 
   @HostListener('mouseout')
   onMouseOut() {
-    console.log('mouseout');
     this.el.nativeElement.style.backgroundColor = '#ffffff';
   }
 }

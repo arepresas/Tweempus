@@ -1,4 +1,6 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component } from '@angular/core';
+import { Twimp } from '../shared/twimp/twimp.model';
 
 @Component({
   selector: 'tweempus-dashboard',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent {
-  constructor() {}
+  twimps: Twimp[];
+
+  constructor(private readonly route: ActivatedRoute) {
+    this.twimps = this.route.snapshot.data['twimps'];
+  }
 }

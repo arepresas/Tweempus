@@ -2,7 +2,7 @@
 
   <div class="twimp_header">
     <img class="twimp_header_img" src="assets/images/google-icon.png" alt="Imagen de un twimp">
-    <a class="twimp_header_name" href="www.therewego.com" target="_b">{{twimp.id | number: '2.2-2'}} - by
+    <a class="twimp_header_name" href={{twimp.url}} target="_b">{{twimp.id}} - by
       {{twimp.author.fullName}}</a>
     <div class="twimp_header_date">Published on {{twimp.timestamp | date: "dd/MM/yyyy" }}</div>
     <div class="twimp_header_cost">Cost of Twimp {{twimp.cost| currency: "EUR"}}</div>
@@ -16,7 +16,7 @@
   <hr class="twimp_line">
 
   <div class="twimp_fav">
-    <a class="fav_icon" [ngClass]="twimp.favorite ? 'fav_icon-selected' : ''"
+    <a class="fav_icon" [ngClass]="{'fav_icon-selected': twimp.favorite}"
       (click)="twimp.favorite = !twimp.favorite">&#10084;</a>
   </div>
 

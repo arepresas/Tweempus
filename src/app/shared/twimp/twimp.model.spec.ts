@@ -4,7 +4,7 @@ import { Twimp } from './twimp.model';
 describe('Twimp.Model', () => {
   it('should create an instance', () => {
     expect(
-      new Twimp(1, '', new Author(1, '', '', ''), '', 1, new Date())
+      new Twimp('1', '', new Author('1', '', '', ''), '', 1, new Date())
     ).toBeTruthy();
   });
 });
