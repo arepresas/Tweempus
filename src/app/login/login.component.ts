@@ -1,3 +1,4 @@
+import { AuthenticationService } from '../core/authentication.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  constructor() {}
+  constructor(private authService: AuthenticationService) {}
+
+  logIn() {
+    this.authService.login('1');
+  }
 }

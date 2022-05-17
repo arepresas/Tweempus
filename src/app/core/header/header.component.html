@@ -2,5 +2,8 @@
   <a routerLink="/home">
     <h2 class="header_title">Tweempus</h2>
   </a>
-	<button class="header_auth">Regístrate</button>
+
+  <button class="header_auth" *ngIf="checkLogin()" (click)="logOut()">Cerrar sesión</button>
+  <button class="header_auth" *ngIf="!checkLogin()">Regístrate</button>
+
 </section>

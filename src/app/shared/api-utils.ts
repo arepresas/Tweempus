@@ -7,6 +7,8 @@ export class ApiUtils {
 
   public static AUTHOR_URL: string = 'http://localhost:3000/authors';
 
+  public static AUTH_TOKEN: string = 'http://localhost:3000/authenticated';
+
   static handleError(error: any) {
     let errorMsg = error.message
       ? error.message
